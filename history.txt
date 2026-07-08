@@ -1,0 +1,30 @@
+  120  mkdir git-majonez
+  121  cd git-majonez
+  122  git init
+  123  touch main.cpp
+  124  git add main.cpp 
+  125  git commit -m "Initial commit"
+  126  git status
+  127  git add main.cpp 
+  128  git commit -m "Farewell changed"
+  129  git remote add origin https://github.com/mmoskala07/git-majonez.git
+  130  git push -u origin master
+  131  git branch
+  132  git log --graph
+  133  git checkout -b cs
+  134  git log --graph
+  135  git reset --hard 62abfb10a5a80f0a139b75f2e4347dc88c7f2f8c
+  136  git log --graph
+  137  git status
+  138  git add main.cpp 
+  139  git commit -m "Greetings"
+  140  git push origin cs
+  141  git checkout master
+  142  git log --graph
+  143  git merge cs
+  144  git status
+  145  git add main.cpp 
+  146  git commit -m "Merge branch cs to master"
+  147  git log --graph
+  148  history | tail -29
+  149  history | tail -30 > history.txt
